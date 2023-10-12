@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #3b8099, #81ceec, #8ecfe9); /* degradê meio iluminado */
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#titulo {
+    color: #120a8f;
+    font-size: 4em; /* tamanho maior */
+    margin: 0;
+    animation: balanco 2s infinite; /* animação de balanço */
+}
+
+@keyframes balanco {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#psiqu {
+    color: #006400;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#content {
+    text-align: center;
+}
+
+.link-box {
+    margin-bottom: 15px; /* espaçamento entre retângulos */
+}
+
+.link-rect {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.link-rect p {
+    color: #000000;
+    margin: 0;
+    font-weight: bold; /* tornar o texto em negrito */
+}
+
+/* Remover sublinhado globalmente */
+a {
+    text-decoration: none !important;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#social-icons a {
+    margin-right: 10px;
+}
+
+#social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Consulta de Mídia para Dispositivos Pequenos (por exemplo, dispositivos móveis) */
+@media only screen and (max-width: 600px) {
+    #titulo {
+        font-size: 2.5em;
+    }
+
+    .link-rect {
+        width: 80%;
+    }
+}
+
+
